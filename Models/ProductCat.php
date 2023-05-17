@@ -2,14 +2,14 @@
 
 
 class ProductCat extends Product{
-    public $family = 'Cat';
-    public $category;
+    public $category = 'Cat';
+    public $family;
     
-    public function __construct($name, $price, $category, $image)
+    public function __construct($name, $price, $family, $image)
     {
         $this->name = $name;
         $this->price = $price;
-        $this->category = $category;
+        $this->family = $family;
         $this->image = $image;
     }
 }
