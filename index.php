@@ -38,7 +38,8 @@ include __DIR__ . '/Database/db.php';
                                 <?php elseif($product->category == 'Dog'): ?>
                                 <i class="fa-solid fa-dog fs-3 p-2 rounded-circle bg-warning"></i>
                                 <?php else:?>
-                                    <i class="fa-solid fa-cube p-2 rounded-circle fs-3 bg-success"></i>
+                                    <i class="fa-solid fa-dog fs-3 p-2 rounded-circle bg-warning me-2"></i>
+                                    <i class="fa-solid fa-cat fs-3 p-2 rounded-circle bg-info"></i>
                                 <?php endif; ?>
                             </p>
                             </div>

@@ -3,7 +3,7 @@
 
 class Product{
     public 
-    $name, $price, $category = 'Product', $image; 
+    $name, $price, $category, $image; 
 
     public function __construct($name, $price, $image)
     {
