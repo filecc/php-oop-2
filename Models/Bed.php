@@ -2,11 +2,10 @@
 class Bed extends Product{
     public $family;
     
-    public function __construct($name, $price, $family, $image)
+    public function __construct($name, $price, $family, $category, $image)
     {
-        $this->name = $name;
-        $this->price = $price;
+        Product::__construct($name, $price, $image, $category);
         $this->family = $family;
-        $this->image = $image;
+        
     }
 }
