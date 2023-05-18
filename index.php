@@ -45,7 +45,10 @@ include __DIR__ . '/Database/db.php';
                             </div>
                           
                             <div class="card-body">
-                                <h6 class="card-title fw-bold"><?php echo $product->name ?></h6>
+                                <h6 class="card-title fw-bold"><?php echo $product->name ?>
+                                <?php if(property_exists($product, 'weight')) {echo "<span> - {$product->getWeight()}</span>";} ?>
+                                </h6>
+                               
                                 <p class="card-text">
                                     Prezzo: <?php echo $product->price; ?>€
                                 </p>
